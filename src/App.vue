@@ -1,5 +1,9 @@
 <template>
-  <div id="app">
+  <div id="app" class="box">
+    <common-top-bar></common-top-bar>
+    <header-wrapper></header-wrapper>
+    <custom-article></custom-article>
+    <custom-footer></custom-footer>
     <router-link to="/"><img src="./assets/logo.png"></router-link>
     <navbar></navbar>
     <nav>
@@ -17,12 +21,5 @@ export default {
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+@import url('./styles/main.css');
 </style>
